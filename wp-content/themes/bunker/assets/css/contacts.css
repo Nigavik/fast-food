@@ -1,0 +1,207 @@
+.content {
+    padding: 20px 0;
+    min-height: calc(100vh - 358px);
+}
+
+.content .container {
+    align-items: baseline;
+}
+
+.content nav {
+    width: 100%;
+    max-width: 230px;
+    min-width: 210px;
+}
+
+.content nav li {
+    display: block;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.content nav li a {
+    color: #000;
+    padding: 5px;
+    font-weight: 500;
+    transition: color .25s ease;
+}
+
+.content nav li.current_page_item a {
+    background: #0000002a;
+}
+
+.content nav li a:hover {
+
+    color: #D1B000;
+}
+
+.content-box {
+    width: 100%;
+}
+
+.content .breadcrumbs {
+    display: flex;
+}
+
+.content .breadcrumbs a {
+    color: #000;
+    font-weight: 500;
+    transition: color .25s ease;
+}
+
+.content .breadcrumbs a:hover {
+    color: #D1B000;
+}
+
+.content .breadcrumbs svg {
+    width: 20px;
+    margin: 0 5px;
+}
+
+.content h1 {
+    margin: 20px 0 10px;
+    color: #000;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.content-block {
+    display: flex;
+    width: 100%;
+
+}
+
+.content-block ul {
+    max-width: 370px;
+    margin-right: 100px;
+    width: 100%;
+}
+
+.content-block li {
+    display: block;
+    width: 100%;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.content-block li a {
+    width: fit-content;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-content: center;
+
+    transition: color .25s ease;
+}
+
+.content-block li a:hover {
+    color: #D1B000;
+}
+
+.content-block li svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: fill .25s ease;
+}
+
+.content-block li path {
+    transition: fill .25s ease;
+}
+
+.content-block .voda:hover svg {
+    fill: rgb(90.196078%, 0%, 0%);
+}
+
+.content-block .kiev g {
+    stroke: #000;
+    transition: stroke .25s ease;
+}
+
+.content-block .kiev:hover g {
+    stroke: rgb(0, 160, 255);
+}
+
+.content-block .telegram #tel_one {
+    fill: #000;
+    transition: fill .25s ease;
+}
+
+.content-block .telegram #tel_two {
+    fill: #fff;
+    transition: fill .25s ease;
+}
+
+.content-block .telegram:hover #tel_one {
+    fill: url(#linear-gradient);
+}
+
+.content-block .telegram:hover #tel_two {
+    fill: #fff;
+}
+
+.content-block .viber #g82 path {
+    transition: fill .25s ease, stroke .25s ease;
+    fill: #000;
+    stroke: #000;
+}
+
+.content-block .viber:hover #g82 path {
+    fill: #7360f2;
+    stroke: #7360f2;
+}
+
+
+.content-block .email g path {
+    transition: fill .25s ease;
+    fill: #000;
+}
+
+.content-block .email:hover g path {
+    fill: #00bb28;
+}
+
+.content-block .map,
+.content-block .map iframe {
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    main .content-block {
+        flex-wrap: wrap;
+    }
+
+    main .content-block ul {
+        margin-right: 0;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main .content-block li svg {
+        margin-right: 5px;
+    }
+
+    main .content-block li {
+        width: fit-content;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content h1 {
+        nav-down: 10px 0;
+        font-size: 30px;
+    }
+
+    .content p,.content div {
+        font-size: 15px;
+    }
+}

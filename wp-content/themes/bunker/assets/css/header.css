@@ -1,0 +1,1322 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('fonts/Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('fonts/Montserrat-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.woff2') format('woff2'),
+        url('fonts/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Black.woff2') format('woff2'),
+        url('fonts/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+:root {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+span {
+    display: block;
+    font-family: 'Montserrat';
+}
+
+bdi {
+    display: flex;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-family: 'Montserrat';
+
+}
+
+button {
+    outline: none;
+    background: none;
+    display: block;
+    border: none;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+div {
+    font-family: 'Montserrat';
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: #FFF;
+    font-family: 'Montserrat';
+
+}
+
+/* хром, сафари */
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+/* ie 10+ */
+body {
+    -ms-overflow-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.none-scroll {
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+main{
+    margin-top: 100px;
+}
+.header-top {
+    background: #000000;
+    padding: 10px 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.custom-logo-link {
+    height: fit-content;
+    margin-right: 40px;
+}
+
+.header-nav-top,
+.header-nav-bottom {
+    display: flex;
+}
+
+.header-nav-top {
+    margin-bottom: 10px;
+}
+
+.header-nav-top>img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.header-nav-top>a {
+    margin-right: 10px;
+    font-size: 16px;
+    transition: color .25s ease;
+}
+
+.header-nav-top .voda:hover svg {
+    fill: rgb(90.196078%, 0%, 0%);
+}
+
+.header-nav-top .kiev g {
+    stroke: #fff;
+    transition: stroke .25s ease;
+}
+
+.header-nav-top .kiev:hover g {
+    stroke: rgb(0, 160, 255);
+}
+
+.header-nav-top svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    transition: fill .25s ease;
+}
+
+.header-nav-top>button {
+    color: #fff;
+    outline: none;
+    background: none;
+    transition: color .25s ease;
+}
+
+.header-nav-bottom ul,
+.header-nav-bottom .social-box {
+    display: flex;
+}
+
+.header-nav-bottom li {
+    display: block;
+    margin-right: 18px;
+
+}
+
+.header-nav-bottom li a {
+    font-size: 12px;
+    transition: color .25s ease;
+}
+
+.header-nav-bottom .social-box {
+    margin-left: 10px;
+}
+
+.header-nav-bottom .social-link {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.insta #ins_the {
+    fill: #000;
+    transition: fill .25s ease;
+}
+
+.insta #ins_one,
+.insta #ins_two {
+    fill: #fff;
+    transition: fill .25s ease;
+}
+
+.insta:hover #ins_one {
+    fill: url(#c);
+}
+
+.insta:hover #ins_two {
+    fill: url(#d);
+}
+
+.insta:hover #ins_the {
+    fill: #fff;
+}
+
+.tik-tok {
+    background: #fff;
+    transition: background .25s ease;
+    border-radius: 5px;
+}
+
+.tik-tok:hover {
+    background: #ffffff59;
+}
+
+.tik-tok #tik_one {
+    fill: #fff;
+    transition: fill .25s ease;
+}
+
+.tik-tok #tik_the,
+.tik-tok #tik_fo {
+    fill: #fff;
+    transition: fill .25s ease;
+}
+
+.tik-tok:hover #tik_one {
+    fill: #EE1D52;
+}
+
+.tik-tok:hover #tik_the,
+.tik-tok:hover #tik_fo {
+    fill: #69C9D0;
+}
+
+.telegram #tel_one {
+    fill: #fff;
+    transition: fill .25s ease;
+}
+
+.telegram #tel_two {
+    fill: #000;
+    transition: fill .25s ease;
+}
+
+.telegram:hover #tel_one {
+    fill: url(#linear-gradient);
+}
+
+.telegram:hover #tel_two {
+    fill: #fff;
+}
+
+
+.viber #g82 path {
+    transition: fill .25s ease;
+    fill: #fff;
+
+}
+
+.viber:hover #g82 path {
+    fill: #7360f2;
+}
+
+.header-top-right {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.schedule-box {
+    display: flex;
+    color: #FFF;
+}
+
+.schedule-box>img {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.schedule-box strong {
+    margin-top: 10px;
+    width: fit-content;
+    white-space: nowrap;
+    display: block;
+    transition: color .25s ease;
+}
+
+.header-top-right #minicart_btn {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header-top-right #minicart_btn img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/*
+.header-bottom {
+    background: #000;
+
+}*/
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-nav .parent {
+    display: flex;
+}
+
+.parent>li {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    margin-right: 15px;
+    padding: 10px 0;
+
+}
+
+.parent>li::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    content: '';
+    opacity: 0;
+    width: 100%;
+    height: 15px;
+    /* background: #fff; */
+    top: auto;
+
+}
+
+.parent>li span {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.parent .children {
+    display: none;
+    flex-wrap: wrap;
+    width: fit-content;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 5px 25px rgba(120, 120, 150, .5);
+    min-width: 230px;
+}
+
+@media screen and (min-width: 801px) {
+    .parent li:hover .children {
+        display: flex;
+        z-index: 2;
+    }
+}
+
+
+.parent .children li {
+    display: block;
+    width: 100%;
+}
+
+.parent .children li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.parent .children a {
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.parent .children a img {
+    margin-right: 20px;
+    max-width: 65px;
+}
+
+.search-box {
+    display: flex;
+    height: fit-content;
+}
+
+#search-form-active {
+    position: relative;
+    z-index: 2;
+}
+
+#search-form-active img {
+    width: 16px;
+    height: 16px;
+    display: none;
+}
+
+#search-form-active.active img:nth-child(2) {
+    display: block;
+}
+
+#search-form-active.close img:nth-child(1) {
+    display: block;
+}
+
+#search-form-active.active+form {
+    width: 250px;
+}
+
+.search-box form {
+    display: flex;
+    position: relative;
+    width: 0;
+    margin-left: -28px;
+    overflow: hidden;
+    z-index: 1;
+    transition: width .25s ease;
+}
+
+.search-box form input[type="text"] {
+    padding: 5px 30px 5px 30px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    width: 250px;
+    height: fit-content;
+    outline: none;
+}
+
+.search-box form .submit-box {
+    position: absolute;
+    right: 7px;
+    left: auto;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box form .submit-box input {
+    width: 100%;
+    height: 100%;
+    z-index: 22;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.search-box form .submit-box img {
+    width: 15px;
+    height: 15px;
+}
+
+.header-nav-top>a:hover,
+.header-nav-top>button:hover,
+.header-nav-bottom li a:hover,
+.header-top-right button:hover,
+.parent>li:hover>span,
+.parent .children a:hover {
+    color: #D1B000;
+}
+
+.parent .children a:hover {
+    background: #00000021;
+}
+
+#minicart_btn {
+    position: relative;
+    transition: opacity .25s ease;
+}
+
+#minicart_btn:hover {
+    opacity: .7;
+}
+
+.minicart-popap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 55;
+    height: 100%;
+    display: none;
+}
+
+.minicart-popap.active {
+    display: block;
+}
+
+.minicart-popap .overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000088;
+}
+
+.minicart {
+    position: fixed;
+    right: 10%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 420px;
+    max-height: 800px;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.minicart-top {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+
+.minicart-top h2 {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    display: flex;
+}
+
+.minicart-top h2 span {
+    color: #909090;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    margin-left: 10px;
+}
+
+.minicart-top a {
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 2.5rem;
+    margin: 0 0 0 auto;
+    text-decoration-line: underline;
+    color: #000;
+    transition: color .25s;
+}
+
+.minicart-top a:hover {
+    color: #D1B000;
+}
+
+.minicart-content {
+    padding: 1.5rem 0;
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 572px;
+    padding-right: 10px;
+    margin-right: -10px;
+}
+
+.minicart-content .card-box {
+    display: flex;
+
+}
+
+.minicart-content .card-box img {
+    width: 80px;
+    height: 80px;
+}
+
+.minicart-content .card {
+    margin-bottom: 20px;
+}
+
+.minicart-content .product-img {
+    width: 80px;
+    margin-right: 10px;
+    height: 80px;
+}
+
+.minicart-content .card-info {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.minicart-content .card-info h4 {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: #000;
+}
+
+.minicart-content .card-info span {
+    font-size: .75rem;
+    line-height: 1rem;
+    color: #000;
+    font-weight: 400;
+}
+
+.minicart-content .card-info span.price {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.minicart-content .add-box {
+    width: 48px;
+    background: #676767;
+    border-radius: 5px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.minicart-content .add-box button {
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    transition: background .25s ease;
+}
+
+.minicart-content .add-box button:hover {
+    background: #000;
+}
+
+.minicart-content .add-box button svg {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.minicart-content .add-box button:hover svg {
+    fill: #D1B000;
+}
+
+.minicart-content .add-box .count input {
+    width: 27px;
+    text-align: center;
+    background: #676767;
+    border: none;
+    outline: none;
+    margin: 5px auto;
+    color: #fff;
+    font-weight: 400;
+}
+
+.minicart-content .add-box .count input::-webkit-outer-spin-button,
+.minicart-content .add-box .count input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.minicart-content .card-dop {
+    padding: 30px 0;
+    border-bottom: 1px solid #333333;
+
+}
+
+.minicart-content .card-dop h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #000;
+
+    margin-bottom: 10px;
+}
+
+.minicart-content .card-dop-box {
+    overflow-x: scroll;
+    display: flex;
+    gap: 15px;
+    padding: 0 0 20px 0;
+}
+
+.minicart-content .dop-ingredient {
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    display: flex;
+    padding: calc(.625rem - 1px);
+    align-items: center;
+    background-color: rgb(255 255 255/ 1);
+    border: 1px solid #e7e6e6;
+    border-radius: .5rem;
+
+    --tw-shadow: 0 0.375rem 1.5rem rgba(0, 0, 0, .08);
+    --tw-shadow-colored: 0 0.375rem 1.5rem var(--tw-shadow-color);
+}
+
+.minicart-content .dop-ingredient img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.minicart-content .dop-ingredient .name {
+    color: #000;
+    font-size: .6875rem;
+    line-height: .8125rem;
+    font-weight: 600;
+}
+
+.minicart-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    /* background: #f8f8f8;*/
+    padding-top: 1.5rem;
+    position: relative;
+    margin-bottom: -20px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.minicart-bottom::after {
+    content: "";
+    display: block;
+    width: calc(100% + 40px);
+    height: calc(100% + 3.375rem);
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    background: linear-gradient(180deg, hsla(0, 0%, 56%, 0), hsla(0, 0%, 56%, .3) 29.04%);
+    pointer-events: none;
+}
+
+.minicart-bottom h4,
+.minicart-bottom span {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.125;
+
+
+    color: #000;
+}
+
+.minicart-bottom a {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: calc(1rem - 1px);
+    width: 100%;
+    justify-content: center;
+    background: #000000;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background .25s, color .25s;
+    outline: none;
+    margin-top: 1.5rem;
+}
+
+.minicart-bottom a:hover {
+    color: #D1B000;
+    background: #333333;
+}
+
+.call-popap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 55;
+    display: none;
+}
+
+.call-popap.active {
+    display: block;
+}
+
+.call-popap .overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000088;
+}
+
+.call-popap .call-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, .75);
+    padding: 30px;
+    width: 430px;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.call-popap .call-box h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.call-popap .call-box>span {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form-box {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-box>span {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    min-width: 67px;
+}
+
+.form-box>input {
+    border: 1px solid #acacac;
+    background: #fff;
+    border-radius: 0;
+    line-height: normal;
+    vertical-align: middle;
+    transition: border-color .1s;
+    padding: 6px 8px;
+    font-size: 16px;
+
+    width: 100%;
+}
+
+.form-box>input::-webkit-outer-spin-button,
+.form-box>input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.call-popap input[type="submit"] {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: calc(1rem - 1px);
+    width: 100%;
+    justify-content: center;
+    background: #000000;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background .25s, color .25s;
+    outline: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.call-popap input[type="submit"]:hover {
+    color: #D1B000;
+    background: #333333;
+}
+
+.call-popap .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: opacity .25s ease;
+}
+
+.call-popap .close svg {
+    width: 30px;
+    height: 30px;
+}
+
+.call-popap .close:hover {
+    opacity: .6;
+}
+
+
+
+.burger {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-right: 20px;
+    z-index: 55;
+    display: none;
+    background: #000;
+}
+
+.burger span {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    position: relative;
+    transition: rotate .25s ease, top .25s ease;
+}
+
+.burger span::after {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    top: auto;
+    left: 0;
+    right: 0;
+    transition: opacity .25s ease;
+}
+
+.burger span::before {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    top: auto;
+    left: 0;
+    right: 0;
+    transition: rotate .25s ease, bottom .25s ease;
+}
+
+.burger.active span {
+    rotate: 45deg;
+    top: 10px;
+
+}
+
+.burger.active span::before {
+    rotate: -90deg;
+    bottom: 0;
+
+}
+
+.burger.active span::after {
+    opacity: 0;
+}
+
+.mob-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: #000;
+    width: 300px;
+    padding: 60px 20px 20px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    left: -100%;
+    right: auto;
+    transition: left .5s ease;
+    display: none;
+}
+
+.burger.active+.mob-menu {
+    left: 0;
+}
+
+.mob-menu .parent>li::after {
+    display: none;
+}
+
+.mob-menu .header-nav .parent {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.mob-menu .parent li .children {
+    max-height: 0;
+    padding: 0;
+    position: relative;
+    width: fit-content;
+    background: none;
+    box-shadow: none;
+    max-width: 300px;
+    top: 0;
+    transition: max-height .25s ease, padding .25s ease;
+}
+
+.mob-menu .parent li.active .children {
+    display: flex;
+    z-index: 2;
+    max-height: 500px;
+    padding: 20px 0;
+}
+
+.mob-menu .parent .children a {
+    color: #fff;
+}
+
+.mob-menu .parent .children a img {
+    max-width: 35px;
+}
+
+.mob-menu .search-box form input[type="text"] {
+    padding: 5px 30px 5px 10px;
+}
+
+.mob-menu .parent>li>a.active {
+    color: #D1B000;
+}
+
+.minicart .close {
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    z-index: 25;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 .1875rem .25rem -.3125rem rgba(24, 24, 28, .03), 0 .0625rem .125rem rgba(24, 24, 28, .04);
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    background: #fff;
+    border-color: #e6e6e6;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .header-top-right .schedule-box {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .container {
+        justify-content: space-between;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header-top-right {
+        margin: 0;
+    }
+
+    .custom-logo-link {
+        margin-right: 0;
+        height: 40px;
+    }
+
+    .mob-menu {
+        display: block;
+    }
+
+    .mob-menu .header-nav {
+        min-height: calc(100% - 80px);
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    .mob-menu .parent li .children {
+        display: flex;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .search-box {
+        width: fit-content;
+        margin: auto 0 20px 0;
+    }
+
+    #search-form-active {
+        display: none;
+    }
+
+    .search-box form {
+        margin-left: auto;
+    }
+
+    .schedule-box {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .minicart-popap {
+        height: 100vh;
+    }
+
+    .minicart {
+        width: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0;
+        max-width: 100%;
+        max-height: 100%;
+        box-sizing: border-box;
+        padding: 70px 20px 20px;
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .minicart-content {
+        max-height: 65%;
+    }
+
+    .minicart-bottom {
+        margin-bottom: 0;
+        width: 100%;
+        background: none;
+        padding-bottom: 0;
+    }
+
+    .minicart-bottom::after {
+        width: calc(100% + 80px);
+        bottom: -20px;
+    }
+
+    .minicart-top {
+        width: 100%;
+    }
+
+    .minicart-content .add-box {
+        width: 32px;
+        overflow: visible;
+    }
+
+    .minicart-content .add-box button.minus {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .minicart-content .add-box button.plus {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .minicart .close {
+        display: block;
+    }
+
+    .call-popap .call-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .call-popap .call-box h2 {
+        font-size: 20px;
+
+    }
+
+    .call-popap .call-box>span {
+        font-size: 14px;
+    }
+}
+.none {
+    display: none !important;
+}
+.minicart-popap 
+.woocommerce,.checkout.woocommerce-checkout {
+    height: 100%;
+}
+.minicart-popap 
+.woocommerce 
+.checkout .woocommerce-checkout{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nof{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100px;
+    width: 100%;
+    max-width: 500px;
+    background: #01c321db;
+    padding: 20px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+    z-index: 99;
+}
+.nof.active{
+    display: block;
+}
